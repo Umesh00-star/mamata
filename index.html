@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mamata Pandit | Registered Nurse</title>
+<meta name="description" content="Portfolio of Mamata Pandit, a caring and dedicated nurse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<!-- ============ INTRO ============ -->
+<div id="intro" role="dialog" aria-label="Welcome">
+  <div class="intro-stage">
+    <div class="bubble" id="bubble" aria-live="polite">
+      <span class="bubble-title">Namaste 🙏</span>
+      <span id="typed"></span><span class="caret"></span>
+    </div>
+    <svg id="nurse" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of Mamata in a nurse uniform with hands in namaste">
+      <g class="bob">
+        <!-- back hair -->
+        <path d="M74 100 Q70 40 120 36 Q170 40 166 100 Q172 150 160 190 L80 190 Q68 150 74 100Z" fill="#1d1416"/>
+        <!-- body / uniform -->
+        <path d="M60 175 Q120 140 180 175 L196 320 L44 320Z" fill="#fff"/>
+        <path d="M98 150 L120 192 L142 150 Q120 160 98 150Z" fill="#0f7a80"/>
+        <path d="M60 175 Q120 140 180 175" fill="none" stroke="#0f7a80" stroke-width="4"/>
+        <!-- badge -->
+        <rect x="150" y="214" width="22" height="14" rx="3" fill="#e0f2f1" stroke="#0f7a80"/>
+        <rect x="154" y="219" width="14" height="2" fill="#0f7a80"/>
+        <!-- neck -->
+        <rect x="108" y="128" width="24" height="26" rx="8" fill="#e9b48f"/>
+        <!-- face -->
+        <ellipse cx="120" cy="100" rx="35" ry="39" fill="#f3c8a6"/>
+        <ellipse cx="86" cy="108" rx="5" ry="8" fill="#f3c8a6"/><ellipse cx="154" cy="108" rx="5" ry="8" fill="#f3c8a6"/>
+        <circle cx="156" cy="112" r="2.5" fill="#f4a63a"/><circle cx="84" cy="112" r="2.5" fill="#f4a63a"/>
+        <!-- hair fringe -->
+        <path d="M84 84 Q92 56 120 54 Q148 56 156 84 Q138 66 120 70 Q100 66 84 84Z" fill="#1d1416"/>
+        <!-- cap -->
+        <path d="M80 62 L88 34 Q120 24 152 34 L160 62 Q120 50 80 62Z" fill="#fff" stroke="#0f7a80" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M120 36v14M113 43h14" stroke="#e5484d" stroke-width="4" stroke-linecap="round"/>
+        <!-- eyes -->
+        <g class="eyes"><ellipse cx="106" cy="100" rx="4.5" ry="5.5" fill="#2a1a1c"/><ellipse cx="134" cy="100" rx="4.5" ry="5.5" fill="#2a1a1c"/>
+        <circle cx="107.6" cy="98" r="1.6" fill="#fff"/><circle cx="135.6" cy="98" r="1.6" fill="#fff"/></g>
+        <path d="M97 90 Q106 85 114 89M126 89 Q134 85 143 90" stroke="#2a1a1c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <ellipse cx="97" cy="116" rx="7" ry="4" fill="#f08a8a" opacity=".45"/><ellipse cx="143" cy="116" rx="7" ry="4" fill="#f08a8a" opacity=".45"/>
+        <path d="M110 120 Q120 130 130 120" stroke="#b5443f" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="120" cy="77" r="2.4" fill="#d6336c"/>
+        <!-- arms (sleeves + forearms) -->
+        <path d="M70 178 Q50 230 76 262" stroke="#fff" stroke-width="26" fill="none" stroke-linecap="round"/>
+        <path d="M170 178 Q190 230 164 262" stroke="#fff" stroke-width="26" fill="none" stroke-linecap="round"/>
+        <path d="M70 178 Q50 230 76 262M170 178 Q190 230 164 262" stroke="#0f7a80" stroke-width="2" fill="none" opacity=".25"/>
+        <path d="M80 262 L112 236" stroke="#f3c8a6" stroke-width="15" stroke-linecap="round"/>
+        <path d="M160 262 L128 236" stroke="#f3c8a6" stroke-width="15" stroke-linecap="round"/>
+        <path d="M66 266 L88 252M174 266 L152 252" stroke="#0f7a80" stroke-width="6" stroke-linecap="round"/>
+        <!-- namaste hands -->
+        <path d="M120 242 C98 228 102 198 120 176 C138 198 142 228 120 242Z" fill="#f7d3b4" stroke="#e0a581" stroke-width="1.5"/>
+        <path d="M120 180 V240" stroke="#d99a74" stroke-width="2"/>
+        <path d="M108 206q4 4 9 3M132 206q-4 4-9 3M110 218q4 3 8 2M130 218q-4 3-8 2" stroke="#e0a581" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+  <button id="skip" type="button">Skip intro</button>
+</div>
+
+<!-- ============ SITE ============ -->
+<header class="nav" id="top">
+  <a href="#home" class="brand"><span class="brand-mark">M</span> Mamata Pandit</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact" class="btn small">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="pill"><span class="dot"></span> Open to nursing opportunities</p>
+        <h1>Hello, I'm Mamata Pandit.<br>Care with a calm hand and a warm heart.</h1>
+        <p class="lead">Registered nurse dedicated to safe, compassionate and attentive patient care. I treat every patient the way I would want my own family treated.</p>
+        <div class="cta">
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#experience" class="btn ghost">See my experience</a>
+        </div>
+        <ul class="stats">
+          <li><strong>[X]+</strong> years of experience</li>
+          <li><strong>[X]+</strong> patients cared for</li>
+          <li><strong>BLS</strong> certified</li>
+        </ul>
+      </div>
+      <div class="hero-art" id="heroArt"></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap split">
+      <h2>About me</h2>
+      <div>
+        <p>I am a nurse who believes healing starts with listening. From bedside care to patient education, I focus on making people feel safe, informed and respected, during the hardest days of their lives.</p>
+        <p>I work well in fast-paced teams, stay calm under pressure, and keep learning so my care stays current. Outside work I enjoy reading, cooking and spending time with family.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <h2>What I do well</h2>
+      <div class="grid">
+        <article class="card"><span class="ico">🩺</span><h3>Patient assessment</h3><p>Vital signs, head-to-toe checks and clear charting.</p></article>
+        <article class="card"><span class="ico">💉</span><h3>Medication &amp; IV care</h3><p>Safe administration, injections and IV monitoring.</p></article>
+        <article class="card"><span class="ico">🩹</span><h3>Wound care</h3><p>Dressing, infection prevention and healing follow-up.</p></article>
+        <article class="card"><span class="ico">🚑</span><h3>Emergency response</h3><p>Quick triage, BLS and steady action under pressure.</p></article>
+        <article class="card"><span class="ico">📋</span><h3>Patient education</h3><p>Plain-language guidance for patients and families.</p></article>
+        <article class="card"><span class="ico">🤝</span><h3>Teamwork</h3><p>Smooth handovers with doctors and fellow nurses.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li><span class="when">20XX – Present</span><h3>Staff Nurse, [Hospital Name]</h3><p>Provide ward-level care, administer medication, assist doctors during rounds and keep accurate patient records.</p></li>
+        <li><span class="when">20XX – 20XX</span><h3>Nurse Intern, [Hospital Name]</h3><p>Supported senior nurses in daily patient care, dressing, sample collection and patient education.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="education">
+    <div class="wrap">
+      <h2>Education &amp; certificates</h2>
+      <div class="grid two">
+        <article class="card"><h3>[Degree / Diploma in Nursing]</h3><p>[College / University Name], 20XX</p></article>
+        <article class="card"><h3>Nursing Council Registration</h3><p>Registration No. [XXXX]</p></article>
+        <article class="card"><h3>Basic Life Support (BLS)</h3><p>[Issuing organisation], 20XX</p></article>
+        <article class="card"><h3>[Other training or certificate]</h3><p>[Details]</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap contact">
+      <div>
+        <h2>Let's connect</h2>
+        <p>Looking for a dedicated nurse for your team or clinic? Send me a message and I will reply soon.</p>
+        <p class="links"><a href="mailto:your-email@example.com">your-email@example.com</a><br><a href="tel:+9770000000000">+977 00 0000 0000</a></p>
+      </div>
+      <form id="form">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><p>© <span id="yr"></span> Mamata Pandit. Made with care.</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
