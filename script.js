@@ -40,14 +40,9 @@
     if (e.target.tagName === 'A') { menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); }
   });
 
-  // Contact form opens the visitor's email app (works on GitHub Pages, no server needed)
-  document.getElementById('form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    var f = e.target;
-    var to = 'your-email@example.com'; // <-- change to Mamata's real email
-    var subject = encodeURIComponent('Portfolio message from ' + f.name.value);
-    var text = encodeURIComponent(f.message.value + '\n\n' + f.name.value + ' (' + f.email.value + ')');
-    location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + text;
+  // "Save as PDF" opens the browser print dialog (choose "Save as PDF")
+  document.querySelectorAll('[data-print]').forEach(function (b) {
+    b.addEventListener('click', function () { window.print(); });
   });
 
   document.getElementById('yr').textContent = new Date().getFullYear();
